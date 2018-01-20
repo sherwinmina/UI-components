@@ -1,28 +1,37 @@
 import React from 'react'
 import styled from 'styled-components'
 
-const Button = styled.button`
-  /* Adapt the colours based on primary prop */
-  background: ${props => (props.primary ? 'palevioletred' : 'white')};
-  background: ${props => (props.disabled ? 'grey' : null)};
+export const Button = styled.button`
+  background: ${props =>
+    (props.primary && `${theme.fg}`) ||
+    (props.disabled && `${theme.disabled}`) ||
+    (props.danger && `${theme.danger}`)};
   width: ${props => (props.full ? '90%' : null)};
-  color: ${props => (props.primary ? 'white' : 'palevioletred')};
+  color: ${props =>
+    (props.primary && 'white') ||
+    ((props.disabled && 'white') || (props.danger && 'white')) ||
+    `${theme.fg}`};
 
+  cursor: ${props => (props.disabled ? 'not-allowed' : 'pointer')};
   font-size: 1em;
   margin: 1em;
   padding: 0.25em 1em;
-  border: 2px solid palevioletred;
-  border-radius: 3px;
+  border: ${props =>
+    (props.disabled && `2px solid ${theme.disabled}`) ||
+    (props.danger && `2px solid ${theme.danger}`) ||
+    `2px solid ${theme.fg}`};
 `
 
-const TomatoButton = Button.extend`
+export const TomatoButton = Button.extend`
   color: tomato;
   border-color: tomato;
 `
 
 const theme = {
-  fg: 'palevioletred',
-  bg: 'white'
+  fg: 'royalBlue',
+  bg: 'white',
+  disabled: 'grey',
+  danger: 'red'
 }
 
-export default Button
+// export default Button
