@@ -1,7 +1,11 @@
 import React, { Component } from 'react'
 import styles from './App.css'
 
+import { ThemeProvider } from 'styled-components'
+
 import { Button, TomatoButton } from './components/Button/Button'
+
+const theme = { main: 'mediumseagreen' }
 
 class App extends Component {
   state = { isDisabled: false }
@@ -16,6 +20,10 @@ class App extends Component {
           Hello
         </Button>
         <TomatoButton>Tomato</TomatoButton>
+
+        <ThemeProvider theme={theme}>
+          <Button>Themed</Button>
+        </ThemeProvider>
       </div>
     )
   }

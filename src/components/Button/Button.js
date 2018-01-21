@@ -7,7 +7,8 @@ export const Button = styled.button`
     (props.disabled && `${theme.disabled}`) ||
     (props.danger && `${theme.danger}`)};
   width: ${props => (props.full ? '90%' : null)};
-  color: ${props =>
+  color: ${props => props =>
+    props.theme.main ||
     (props.primary && 'white') ||
     ((props.disabled && 'white') || (props.danger && 'white')) ||
     `${theme.fg}`};
@@ -16,7 +17,8 @@ export const Button = styled.button`
   font-size: 1em;
   margin: 1em;
   padding: 0.25em 1em;
-  border: ${props =>
+  border: ${props => props =>
+    (props.theme.main && `2px solid ${props.theme.main}`) ||
     (props.disabled && `2px solid ${theme.disabled}`) ||
     (props.danger && `2px solid ${theme.danger}`) ||
     `2px solid ${theme.fg}`};
