@@ -29,6 +29,10 @@ export const TomatoButton = Button.extend`
   border-color: tomato;
 `
 
+export const WideButton = Button.extend`
+  width: 90%;
+`
+
 const theme = {
   fg: 'royalBlue',
   bg: 'white',

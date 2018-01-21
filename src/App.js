@@ -3,7 +3,7 @@ import styles from './App.css'
 
 import { ThemeProvider } from 'styled-components'
 
-import { Button, TomatoButton } from './components/Button/Button'
+import { Button, TomatoButton, WideButton } from './components/Button/Button'
 
 const theme = { main: 'mediumseagreen' }
 
@@ -20,7 +20,7 @@ class App extends Component {
           Hello
         </Button>
         <TomatoButton>Tomato</TomatoButton>
-
+        <WideButton>Wide</WideButton>
         <ThemeProvider theme={theme}>
           <Button>Themed</Button>
         </ThemeProvider>
