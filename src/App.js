@@ -1,9 +1,8 @@
 import React, { Component } from 'react'
-import styles from './App.css'
 
 import { ThemeProvider } from 'styled-components'
 
-import { Button, TomatoButton, WideButton } from './components/Button/Button'
+import { Button, TomatoButton, WideButton } from './ui-components'
 
 const theme = { main: 'mediumseagreen' }
 
@@ -20,7 +19,9 @@ class App extends Component {
           Hello
         </Button>
         <TomatoButton>Tomato</TomatoButton>
-        <WideButton>Wide</WideButton>
+        <div>
+          <WideButton>Wide</WideButton>
+        </div>
         <ThemeProvider theme={theme}>
           <Button>Themed</Button>
         </ThemeProvider>

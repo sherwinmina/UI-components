@@ -1,7 +1,7 @@
-import React from 'react'
 import styled from 'styled-components'
+import { string, bool } from 'prop-types'
 
-export const Button = styled.button`
+const Button = styled.button`
   background: ${props =>
     (props.primary && `${theme.fg}`) ||
     (props.disabled && `${theme.disabled}`) ||
@@ -24,20 +24,18 @@ export const Button = styled.button`
     `2px solid ${theme.fg}`};
 `
 
-export const TomatoButton = Button.extend`
-  color: tomato;
-  border-color: tomato;
-`
-
-export const WideButton = Button.extend`
-  width: 90%;
-`
-
 const theme = {
   fg: 'royalBlue',
   bg: 'white',
   disabled: 'grey',
   danger: 'red'
 }
+Button.propTypes = {
+  primary: bool,
+  disabled: bool,
+  danger: bool,
+  full: bool,
+  theme: string
+}
 
-// export default Button
+export default Button
