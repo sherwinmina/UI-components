@@ -16,7 +16,7 @@ class App extends Component {
         <Button disabled>Hello</Button>
         <Button danger>Hello</Button>
         <Button primary full>
-          Hello
+          Primary
         </Button>
         <TomatoButton>Tomato</TomatoButton>
         <div>
