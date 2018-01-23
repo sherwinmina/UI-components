@@ -1,0 +1,378 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+ShallowWrapper {
+  "length": 1,
+  Symbol(enzyme.__root__): [Circular],
+  Symbol(enzyme.__unrendered__): <App />,
+  Symbol(enzyme.__renderer__): Object {
+    "batchedUpdates": [Function],
+    "getNode": [Function],
+    "render": [Function],
+    "simulateEvent": [Function],
+    "unmount": [Function],
+  },
+  Symbol(enzyme.__node__): Object {
+    "instance": null,
+    "key": undefined,
+    "nodeType": "host",
+    "props": Object {
+      "children": Array [
+        <styled.button>
+          Hello
+</styled.button>,
+        <styled.button
+          primary={true}
+>
+          Hello
+</styled.button>,
+        <styled.button
+          disabled={true}
+>
+          Hello
+</styled.button>,
+        <styled.button
+          danger={true}
+>
+          Hello
+</styled.button>,
+        <styled.button
+          full={true}
+          primary={true}
+>
+          Hello
+</styled.button>,
+        <styled.button>
+          Tomato
+</styled.button>,
+        <div>
+          <styled.button>
+                    Wide
+          </styled.button>
+</div>,
+        <ThemeProvider
+          theme={
+                    Object {
+                              "main": "mediumseagreen",
+                            }
+          }
+>
+          <styled.button>
+                    Themed
+          </styled.button>
+</ThemeProvider>,
+      ],
+    },
+    "ref": null,
+    "rendered": Array [
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": "Hello",
+        },
+        "ref": null,
+        "rendered": "Hello",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": "Hello",
+          "primary": true,
+        },
+        "ref": null,
+        "rendered": "Hello",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": "Hello",
+          "disabled": true,
+        },
+        "ref": null,
+        "rendered": "Hello",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": "Hello",
+          "danger": true,
+        },
+        "ref": null,
+        "rendered": "Hello",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": "Hello",
+          "full": true,
+          "primary": true,
+        },
+        "ref": null,
+        "rendered": "Hello",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": "Tomato",
+        },
+        "ref": null,
+        "rendered": "Tomato",
+        "type": [Function],
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "host",
+        "props": Object {
+          "children": <styled.button>
+            Wide
+</styled.button>,
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Wide",
+          },
+          "ref": null,
+          "rendered": "Wide",
+          "type": [Function],
+        },
+        "type": "div",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {
+          "children": <styled.button>
+            Themed
+</styled.button>,
+          "theme": Object {
+            "main": "mediumseagreen",
+          },
+        },
+        "ref": null,
+        "rendered": Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Themed",
+          },
+          "ref": null,
+          "rendered": "Themed",
+          "type": [Function],
+        },
+        "type": [Function],
+      },
+    ],
+    "type": "div",
+  },
+  Symbol(enzyme.__nodes__): Array [
+    Object {
+      "instance": null,
+      "key": undefined,
+      "nodeType": "host",
+      "props": Object {
+        "children": Array [
+          <styled.button>
+            Hello
+</styled.button>,
+          <styled.button
+            primary={true}
+>
+            Hello
+</styled.button>,
+          <styled.button
+            disabled={true}
+>
+            Hello
+</styled.button>,
+          <styled.button
+            danger={true}
+>
+            Hello
+</styled.button>,
+          <styled.button
+            full={true}
+            primary={true}
+>
+            Hello
+</styled.button>,
+          <styled.button>
+            Tomato
+</styled.button>,
+          <div>
+            <styled.button>
+                        Wide
+            </styled.button>
+</div>,
+          <ThemeProvider
+            theme={
+                        Object {
+                                    "main": "mediumseagreen",
+                                  }
+            }
+>
+            <styled.button>
+                        Themed
+            </styled.button>
+</ThemeProvider>,
+        ],
+      },
+      "ref": null,
+      "rendered": Array [
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Hello",
+          },
+          "ref": null,
+          "rendered": "Hello",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Hello",
+            "primary": true,
+          },
+          "ref": null,
+          "rendered": "Hello",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Hello",
+            "disabled": true,
+          },
+          "ref": null,
+          "rendered": "Hello",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Hello",
+            "danger": true,
+          },
+          "ref": null,
+          "rendered": "Hello",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Hello",
+            "full": true,
+            "primary": true,
+          },
+          "ref": null,
+          "rendered": "Hello",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": "Tomato",
+          },
+          "ref": null,
+          "rendered": "Tomato",
+          "type": [Function],
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "host",
+          "props": Object {
+            "children": <styled.button>
+              Wide
+</styled.button>,
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Wide",
+            },
+            "ref": null,
+            "rendered": "Wide",
+            "type": [Function],
+          },
+          "type": "div",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {
+            "children": <styled.button>
+              Themed
+</styled.button>,
+            "theme": Object {
+              "main": "mediumseagreen",
+            },
+          },
+          "ref": null,
+          "rendered": Object {
+            "instance": null,
+            "key": undefined,
+            "nodeType": "class",
+            "props": Object {
+              "children": "Themed",
+            },
+            "ref": null,
+            "rendered": "Themed",
+            "type": [Function],
+          },
+          "type": [Function],
+        },
+      ],
+      "type": "div",
+    },
+  ],
+  Symbol(enzyme.__options__): Object {
+    "adapter": ReactSixteenAdapter {
+      "options": Object {
+        "enableComponentDidUpdateOnSetState": true,
+      },
+    },
+    "disableLifecycleMethods": true,
+  },
+}
+`;
